@@ -1,0 +1,30 @@
+Tuesday, January 16th Class Notes
+////////////////////////////////////////////////////////////////////////////////
+Topics
+     Usability
+     Design
+     Methods
+     Input/Output
+     Prototyping
+     Collaboration
+     Accessibility
+     Visualization
+     Crowdsourcing
+     Ethics
+
+This semester's theme:
+     AI
+     We are taking a dive into how the computer is very likely to be dominated
+     by an AI program
+
+Practical AI Systems
+     Search
+     Recommender Systems
+     Decision Support
+     Face Recognition
+     Home Automation
+     Self-driving Collaboration
+     Voice Assistants
+     Robots
+     Health
+     Education
