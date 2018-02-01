@@ -1,0 +1,83 @@
+Thursday, January 25 2018
+Class Notes
+////////////////////////////
+AI: Search
+
+     Brief History
+          Archie(1993)
+               Few hundred web sites
+               Retrieve file names matching a user query
+
+          Excite(1993)
+               Created by six Stanford undergrad students
+               Use statistical analysis of word relationships to produce more relevant
+               results
+
+               TFIDF
+                    Term Frequency Inverse Document Frequency
+                         How do we compare two different documents with similar content?
+                    The higher frequency of a document with relevant queried text
+                    means it is more relevant and will be more useful for the user
+
+          Yahoo(1994)
+               Started off as a directory
+               You had to pay to be on their directory
+
+
+          AltaVista(1995)
+               Build an advance query
+
+
+          Google(1998)
+               Founded by Larry Page and Sergey Brin
+               PageRank algorithm
+                    Using links
+               Users have freedom to express complex queries
+               Search isn't what is inside each document rather it will be based
+               on the links within the website
+
+               Provided search results for Yahoo
+
+     Why AltaVista shut down
+          User Experience
+               Google had:
+                    Simple UI
+
+          Speed
+               Tells you how quickly a search was performed
+               Easy Queries + Fast Search results
+                    Allowed users to quickly fine tune their search to find what
+                    they were looking for
+
+     Today: Many new HCI issues about search
+          Social Media
+          eCommerce
+          Mobile
+          Multiple devices
+          Big Data
+          SEO
+          Diversity
+          AI
+
+     UI Design
+          Plan -> Research -> Design -> Adapt -> Measure -> Research
+
+     User Goals
+          Users' needs depend on what they are trying to achieve when they use the
+          product. These user goals inform the information requirements that need
+          to be addressed in order to achieve a high level of usability.
+
+          Tell me -> Show me -> involve me
+
+     User Capabilities
+          Users have different requirements depending on their situation and capabilities.
+          Catering for these needs and enabling access to the product of system
+          for a s many people as it is the aim of inclusive design.
+
+          High stress levels
+          Low confidence
+          Low perception of safety
+          Varying Capabilities
+          Language barriers
+
+     

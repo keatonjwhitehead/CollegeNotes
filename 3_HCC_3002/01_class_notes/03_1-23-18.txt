@@ -1,0 +1,24 @@
+Tuesday, January 23 2018
+HCC
+////////////////////////
+
+Material Design Principles
+     Material is the metaphor
+     Bold, Graphic, intentional
+     Motion provides meaning
+
+Guideline on Help & Feedback
+     Immediate access
+          Take the user directly to help content upon selecting "Help" in your app
+
+Do you really want your faces tagged automatically?
+     Problem:
+          How can users specify their tagging preferences?
+          How can a system respect that?
+
+     Scenario:
+          A photo with three people: Ben, Jason, and Ken. Jason doesn't want his photo
+          tagged. But Ben and Jason are okay with it.
+
+     Solution:
+          Use location of each "subject" that person's preference profile

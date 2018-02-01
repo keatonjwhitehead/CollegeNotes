@@ -1,0 +1,87 @@
+Wednesday, January 24 2018
+Data Mining
+Class notes
+/////////////////////////////
+Are the patterns interesting?
+     Interesting patterns
+          Valid on new/test data with some certainty
+          Novel
+          potentially useful
+          Ultimately understandable by humans
+
+     Are all mined knowledge interesting?
+     Objective measures
+     Subjective measures
+     Completeness, exclusiveness
+
+Techniques utilized
+     Data-intensive
+     Data warehouse (OLAP)
+     Machine learning
+     Statistics
+     Pattern recognition
+     Visualization
+     High-performance, etc.
+
+Data mining and society
+     Social impacts of data mining
+     Privacy-preserving data mining
+     Invisible data mining
+
+Chapter 2: Data
+     How did Target figure out a teen was pregnant before her father did?
+     What data did they need to collect?
+     How would they need to maintain the data?
+     What did they need to do first to be able to predict a pregnancy?
+     What did they need to do to determine the approximate due date?
+
+     Types of Data Sets: Record data
+          Relational records
+               It is like excel where there are tables that can connect
+
+          Transaction data
+               Beer and diapers
+
+          Document data
+               Term-frequency vector (matrix) of text documents
+
+          Transportation net
+          World Wide Web
+          Social connections
+               Facebook
+
+          Generic graph and html links
+          Sequential Data
+               Transaction sequences
+
+     Data set: a grouped set of data objects
+          Students courses, customers, products
+
+     Attribute
+          A data field, representing a characteristic or feature of a data object
+     Types:
+          Nominal - categories, states
+               hair color, major, occupation
+          Binary - boolean, symmetric or asymmetric
+               Smoker, graduated
+          Ordinal
+               Freshman, sophmore, Junior, Senior
+          Numeric - quantitative
+               interval-scaled: 100 C is interval scales, year 2000 or 2018
+               Ratio-scaled: 100 k is ratio scaled since it is twice as high as 50 K
+
+          Binary
+               Two states:
+                    Symmetric binary: both outcomes equally important
+                         smoker graduated
+                    Asymmetric binary: outcomes not equally important
+                         Medical Test
+                         Convention: assign 1 to most important outcome
+          Ordinal
+               Values have a meaningful order (ranking) but magnitude between successive
+               intervals
+                    Positions in the Military
+
+          Discrete Attribute
+               Has only a finite or countably infinite set of Values
+                    Zip code, profession

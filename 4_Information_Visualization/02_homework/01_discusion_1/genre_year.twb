@@ -1,0 +1,977 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook original-version='10.5' source-build='10.5.0 (10500.17.1226.1925)' source-platform='mac' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='albumlist' inline='true' name='federated.1su9zvy0650dbi10dovxe0gk819c' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='albumlist' name='textscan.01ffnpp0ds4pgv138mru91qonvc5'>
+            <connection class='textscan' directory='/Users/keatonwhitehead/Documents/College/4_Information_Visualization/02_homework/01_discusion_1' filename='albumlist.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01ffnpp0ds4pgv138mru91qonvc5' name='albumlist.csv' table='[albumlist#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Number' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Album' ordinal='2' />
+            <column datatype='string' name='Artist' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Subgenre' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Album</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Album]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Album</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Artist]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Artist</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subgenre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subgenre]</local-name>
+            <parent-name>[albumlist.csv]</parent-name>
+            <remote-alias>Subgenre</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Genre (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Genre]' new-bin='true'>
+          <bin default-name='true' value='&quot;Blues &amp; Blues, Folk, World, &amp; Country&quot;'>
+            <value>&quot;Blues&quot;</value>
+            <value>&quot;Blues, Folk, World, &amp; Country&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Electronic, Electronic, Funk / Soul, Electronic, Funk / Soul, Pop and 12 more&quot;'>
+            <value>&quot;Electronic&quot;</value>
+            <value>&quot;Electronic, Funk / Soul&quot;</value>
+            <value>&quot;Electronic, Funk / Soul, Pop&quot;</value>
+            <value>&quot;Electronic, Hip Hop, Funk / Soul&quot;</value>
+            <value>&quot;Electronic, Hip Hop, Funk / Soul, Pop&quot;</value>
+            <value>&quot;Electronic, Hip Hop, Pop&quot;</value>
+            <value>&quot;Electronic, Hip Hop, Reggae, Pop&quot;</value>
+            <value>&quot;Electronic, Pop&quot;</value>
+            <value>&quot;Electronic, Reggae&quot;</value>
+            <value>&quot;Electronic, Rock&quot;</value>
+            <value>&quot;Electronic, Rock, Funk / Soul, Blues, Pop&quot;</value>
+            <value>&quot;Electronic, Rock, Funk / Soul, Pop&quot;</value>
+            <value>&quot;Electronic, Rock, Funk / Soul, Stage &amp; Screen&quot;</value>
+            <value>&quot;Electronic, Rock, Pop&quot;</value>
+            <value>&quot;Electronic,ÊStage &amp; Screen&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Funk / Soul, Funk / Soul, Blues, Funk / Soul, Folk, World, &amp; Country and 3 more&quot;'>
+            <value>&quot;Funk / Soul&quot;</value>
+            <value>&quot;Funk / Soul, Blues&quot;</value>
+            <value>&quot;Funk / Soul, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Funk / Soul, Pop&quot;</value>
+            <value>&quot;Funk / Soul, Stage &amp; Screen&quot;</value>
+            <value>&quot;Funk / Soul,ÊFolk, World, &amp; Country&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Hip Hop, Hip Hop, Funk / Soul, Hip Hop, Rock and 1 more&quot;'>
+            <value>&quot;Hip Hop&quot;</value>
+            <value>&quot;Hip Hop, Funk / Soul&quot;</value>
+            <value>&quot;Hip Hop, Rock&quot;</value>
+            <value>&quot;Hip Hop, Rock, Funk / Soul&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Jazz, Jazz, Funk / Soul, Jazz, Pop and 7 more&quot;'>
+            <value>&quot;Jazz&quot;</value>
+            <value>&quot;Jazz, Funk / Soul&quot;</value>
+            <value>&quot;Jazz, Pop&quot;</value>
+            <value>&quot;Jazz, Pop, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Jazz, Rock&quot;</value>
+            <value>&quot;Jazz, Rock, Blues, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Jazz, Rock, Funk / Soul, Blues&quot;</value>
+            <value>&quot;Jazz, Rock, Funk / Soul, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Jazz, Rock, Funk / Soul, Pop, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Jazz, Rock, Pop&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Pop &amp; Pop, Folk, World, &amp; Country&quot;'>
+            <value>&quot;Pop&quot;</value>
+            <value>&quot;Pop, Folk, World, &amp; Country&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Reggae &amp; Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;'>
+            <value>&quot;Reggae&quot;</value>
+            <value>&quot;Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Rock, Rock, Blues, Rock, Blues, Folk, World, &amp; Country and 16 more&quot;'>
+            <value>&quot;Rock&quot;</value>
+            <value>&quot;Rock, Blues&quot;</value>
+            <value>&quot;Rock, Blues, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Rock, Blues, Pop&quot;</value>
+            <value>&quot;Rock, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Rock, Funk / Soul&quot;</value>
+            <value>&quot;Rock, Funk / Soul, Blues&quot;</value>
+            <value>&quot;Rock, Funk / Soul, Blues, Pop, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Rock, Funk / Soul, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Rock, Funk / Soul, Pop&quot;</value>
+            <value>&quot;Rock, Latin&quot;</value>
+            <value>&quot;Rock, Latin, Funk / Soul&quot;</value>
+            <value>&quot;Rock, Pop&quot;</value>
+            <value>&quot;Rock, Pop, Folk, World, &amp; Country&quot;</value>
+            <value>&quot;Rock, Reggae&quot;</value>
+            <value>&quot;Rock, Reggae, Latin&quot;</value>
+            <value>&quot;Rock, Stage &amp; Screen&quot;</value>
+            <value>&quot;Rock,ÊBlues&quot;</value>
+            <value>&quot;Rock,ÊPop&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Number]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.610766' measure-ordering='alphabetic' measure-percentage='0.389234' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Genre (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Electronic, Hip Hop, Pop&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hip Hop, Rock, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rock, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rock, Pop &amp; Rock, Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blues&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blues &amp; Blues, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Funk / Soul, Blues&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rock, Stage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Electronic, Electronic, Funk / Soul, Electronic, Funk / Soul, Pop and 12 more&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Electronic, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Electronic, Hip Hop, Funk / Soul, Electronic, Hip Hop, Funk / Soul, Pop, Electronic, Hip Hop, Pop and 2 more&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Funk / Soul,ÊFolk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rock&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Electronic, Rock&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jazz, Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rock, Funk / Soul, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Electronic, Hip Hop, Reggae, Pop&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hip Hop, Hip Hop, Funk / Soul, Hip Hop, Rock and 1 more&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jazz&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rock, Folk, World, &amp; Country, Rock, Funk / Soul, Rock, Funk / Soul, Blues and 3 more&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rock, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rock, Rock, Blues, Rock, Blues, Folk, World, &amp; Country and 16 more&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Electronic, Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hip Hop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Latin, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rock, Blues&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jazz, Rock, Pop&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Reggae &amp; Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rock, Reggae&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Blues, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Funk / Soul, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rock,ÊBlues&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Electronic, Rock, Pop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jazz, Rock, Funk / Soul, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rock, Pop&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Electronic, Hip Hop, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hip Hop, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rock, Blues, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Electronic, Rock, Funk / Soul, Blues, Pop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jazz, Rock&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pop &amp; Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rock, Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Electronic, Rock, Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jazz, Rock, Blues, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rock, Latin&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Electronic,ÊStage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jazz, Rock, Funk / Soul, Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rock, Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jazz, Jazz, Funk / Soul, Jazz, Pop and 7 more&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rock, Reggae, Latin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Electronic, Pop&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Funk / Soul, Funk / Soul, Blues, Funk / Soul, Folk, World, &amp; Country and 3 more&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jazz, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rock, Funk / Soul, Blues&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Electronic, Hip Hop, Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Electronic, Rock, Electronic, Rock, Funk / Soul, Blues, Pop, Electronic, Rock, Funk / Soul, Pop and 2 more&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hip Hop, Rock&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rock, Blues, Pop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Classical, Stage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Reggae&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rock &amp; Rock, Blues&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rock,ÊPop&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Electronic, Rock, Funk / Soul, Stage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jazz, Rock, Funk / Soul, Blues&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rock, Latin, Funk / Soul&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Electronic, Reggae&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jazz, Pop&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rock, Funk / Soul, Blues, Pop, Folk, World, &amp; Country&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Electronic&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Electronic, Funk / Soul &amp; Electronic, Funk / Soul, Pop&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Funk / Soul, Stage &amp; Screen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Genre&apos;s through the years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='albumlist' name='federated.1su9zvy0650dbi10dovxe0gk819c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1su9zvy0650dbi10dovxe0gk819c'>
+            <column datatype='string' name='[Genre (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Genre]' new-bin='true'>
+                <bin default-name='true' value='&quot;Blues &amp; Blues, Folk, World, &amp; Country&quot;'>
+                  <value>&quot;Blues&quot;</value>
+                  <value>&quot;Blues, Folk, World, &amp; Country&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Electronic, Electronic, Funk / Soul, Electronic, Funk / Soul, Pop and 12 more&quot;'>
+                  <value>&quot;Electronic&quot;</value>
+                  <value>&quot;Electronic, Funk / Soul&quot;</value>
+                  <value>&quot;Electronic, Funk / Soul, Pop&quot;</value>
+                  <value>&quot;Electronic, Hip Hop, Funk / Soul&quot;</value>
+                  <value>&quot;Electronic, Hip Hop, Funk / Soul, Pop&quot;</value>
+                  <value>&quot;Electronic, Hip Hop, Pop&quot;</value>
+                  <value>&quot;Electronic, Hip Hop, Reggae, Pop&quot;</value>
+                  <value>&quot;Electronic, Pop&quot;</value>
+                  <value>&quot;Electronic, Reggae&quot;</value>
+                  <value>&quot;Electronic, Rock&quot;</value>
+                  <value>&quot;Electronic, Rock, Funk / Soul, Blues, Pop&quot;</value>
+                  <value>&quot;Electronic, Rock, Funk / Soul, Pop&quot;</value>
+                  <value>&quot;Electronic, Rock, Funk / Soul, Stage &amp; Screen&quot;</value>
+                  <value>&quot;Electronic, Rock, Pop&quot;</value>
+                  <value>&quot;Electronic,ÊStage &amp; Screen&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Funk / Soul, Funk / Soul, Blues, Funk / Soul, Folk, World, &amp; Country and 3 more&quot;'>
+                  <value>&quot;Funk / Soul&quot;</value>
+                  <value>&quot;Funk / Soul, Blues&quot;</value>
+                  <value>&quot;Funk / Soul, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Funk / Soul, Pop&quot;</value>
+                  <value>&quot;Funk / Soul, Stage &amp; Screen&quot;</value>
+                  <value>&quot;Funk / Soul,ÊFolk, World, &amp; Country&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Hip Hop, Hip Hop, Funk / Soul, Hip Hop, Rock and 1 more&quot;'>
+                  <value>&quot;Hip Hop&quot;</value>
+                  <value>&quot;Hip Hop, Funk / Soul&quot;</value>
+                  <value>&quot;Hip Hop, Rock&quot;</value>
+                  <value>&quot;Hip Hop, Rock, Funk / Soul&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Jazz, Jazz, Funk / Soul, Jazz, Pop and 7 more&quot;'>
+                  <value>&quot;Jazz&quot;</value>
+                  <value>&quot;Jazz, Funk / Soul&quot;</value>
+                  <value>&quot;Jazz, Pop&quot;</value>
+                  <value>&quot;Jazz, Pop, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Jazz, Rock&quot;</value>
+                  <value>&quot;Jazz, Rock, Blues, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Jazz, Rock, Funk / Soul, Blues&quot;</value>
+                  <value>&quot;Jazz, Rock, Funk / Soul, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Jazz, Rock, Funk / Soul, Pop, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Jazz, Rock, Pop&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Pop &amp; Pop, Folk, World, &amp; Country&quot;'>
+                  <value>&quot;Pop&quot;</value>
+                  <value>&quot;Pop, Folk, World, &amp; Country&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Reggae &amp; Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;'>
+                  <value>&quot;Reggae&quot;</value>
+                  <value>&quot;Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Rock, Rock, Blues, Rock, Blues, Folk, World, &amp; Country and 16 more&quot;'>
+                  <value>&quot;Rock&quot;</value>
+                  <value>&quot;Rock, Blues&quot;</value>
+                  <value>&quot;Rock, Blues, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Rock, Blues, Pop&quot;</value>
+                  <value>&quot;Rock, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Rock, Funk / Soul&quot;</value>
+                  <value>&quot;Rock, Funk / Soul, Blues&quot;</value>
+                  <value>&quot;Rock, Funk / Soul, Blues, Pop, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Rock, Funk / Soul, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Rock, Funk / Soul, Pop&quot;</value>
+                  <value>&quot;Rock, Latin&quot;</value>
+                  <value>&quot;Rock, Latin, Funk / Soul&quot;</value>
+                  <value>&quot;Rock, Pop&quot;</value>
+                  <value>&quot;Rock, Pop, Folk, World, &amp; Country&quot;</value>
+                  <value>&quot;Rock, Reggae&quot;</value>
+                  <value>&quot;Rock, Reggae, Latin&quot;</value>
+                  <value>&quot;Rock, Stage &amp; Screen&quot;</value>
+                  <value>&quot;Rock,ÊBlues&quot;</value>
+                  <value>&quot;Rock,ÊPop&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='Avg' name='[avg:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='manual' column='[federated.1su9zvy0650dbi10dovxe0gk819c].[Genre (group)]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Classical, Stage &amp; Screen&quot;</bucket>
+              <bucket>&quot;Blues &amp; Blues, Folk, World, &amp; Country&quot;</bucket>
+              <bucket>&quot;Electronic, Electronic, Funk / Soul, Electronic, Funk / Soul, Pop and 12 more&quot;</bucket>
+              <bucket>&quot;Folk, World, &amp; Country&quot;</bucket>
+              <bucket>&quot;Funk / Soul, Funk / Soul, Blues, Funk / Soul, Folk, World, &amp; Country and 3 more&quot;</bucket>
+              <bucket>&quot;Hip Hop, Hip Hop, Funk / Soul, Hip Hop, Rock and 1 more&quot;</bucket>
+              <bucket>&quot;Jazz, Jazz, Funk / Soul, Jazz, Pop and 7 more&quot;</bucket>
+              <bucket>&quot;Latin, Funk / Soul&quot;</bucket>
+              <bucket>&quot;Pop &amp; Pop, Folk, World, &amp; Country&quot;</bucket>
+              <bucket>&quot;Reggae&quot;</bucket>
+              <bucket>&quot;Reggae,ÊPop,ÊFolk, World, &amp; Country,ÊStage &amp; Screen&quot;</bucket>
+              <bucket>&quot;Rock, Rock, Blues, Rock, Blues, Folk, World, &amp; Country and 16 more&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <filter class='quantitative' column='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' included-values='in-range-or-null'>
+            <min>1955.0</min>
+            <max>2011.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' field-type='quantitative' max='2011.0' min='1955.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Year:qk]' value='#fc2820' />
+            <format attr='background-color' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' value='#fc2820' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Year:qk]' num-steps='10' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e5d2d2</color>
+                <color>#dab4b5</color>
+                <color>#cf999a</color>
+                <color>#c48081</color>
+                <color>#b9696a</color>
+                <color>#ad5454</color>
+                <color>#a24041</color>
+                <color>#972f30</color>
+                <color>#8c1f20</color>
+                <color>#811213</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e5d2d2</color>
+                <color>#dab4b5</color>
+                <color>#cf999a</color>
+                <color>#c48081</color>
+                <color>#b9696a</color>
+                <color>#ad5454</color>
+                <color>#a24041</color>
+                <color>#972f30</color>
+                <color>#8c1f20</color>
+                <color>#811213</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1su9zvy0650dbi10dovxe0gk819c].[Genre (group)]' />
+              <size column='[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1su9zvy0650dbi10dovxe0gk819c].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.1su9zvy0650dbi10dovxe0gk819c].[Genre (group)]' type='color' />
+            <card param='[federated.1su9zvy0650dbi10dovxe0gk819c].[avg:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Year:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[:Measure Names]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[Genre (group)]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[attr:Year:qk]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Album:nk]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Artist:nk]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Number of Records:qk]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Number:ok]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Subgenre:nk]</field>
+            <field>[federated.1su9zvy0650dbi10dovxe0gk819c].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

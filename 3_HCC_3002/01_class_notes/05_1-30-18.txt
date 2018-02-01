@@ -1,0 +1,71 @@
+Tuesday, January 30th
+HCC - Class notes
+//////////////////////
+People should be afraid of AI
+
+     For:
+          Unknown - They can grow and learn much faster than us and surpass us
+                    They could take control over our economy
+          Surveillance - What pricy rights would we have if AI controls everything?
+          Who? - Who gets to control the AI?
+          Unemployment - People will lose their jobs
+          Misuse - People can misuse it
+          Dangerous - Several deaths with driving cars
+          Privacy -
+
+     Against:
+          Adherence
+          Benefits - Space exploration
+          Accuracy - Sort more data more accurately
+          Useful - provide things that are helpful
+          Access - People have equal access to knowledge as AI gets smart so will humans
+          Task -
+          Freedom -
+          Intelligence -
+          Perspective - There are too many issues that AI could help to not use
+
+Why did Google beat AltaVista?
+     Simpler user interface
+     Allows users to specify sophisticated queries to express exactly what they want to find
+     It pays less attention to the content of the page than to the context of the page
+
+How do people search?
+     In-home interviews and observations
+
+Findings: Nine major types
+     1 - Power searcher: exact phrase, boolean search
+     2 - Developing searcher: learn how to search
+     3 - Social searcher: search together with others
+     4 - Domain-specific searcher: know particular sites well
+     5 - Rule-bound searcher: repeating similar search approaches
+     6 - Visual searcher: use images
+     7 - Disinterested searcher: reluctant
+     8 - Efficient searcher:
+     9 - Interest-driven searcher:
+
+Implications
+     Adaptive search options that support switching search modes
+
+     Power vs. rule-bound
+          Who is open to learning new search strategies? (Power)
+          Who is reluctant to change their strategies (Rule-bound)
+
+Limitations
+     *Participant bias*: subjects may try to make the experimenters happy
+     *Self-selection bias:* Subjects volunteered to participate; How about those who didn't?
+          US participants only
+
+Guidelines
+     Q: How good is the current search UI?
+     A: Run usability testing
+
+     Q: How
+
+Seven factors:
+     Informativeness
+     Understandability
+     Confusion
+     Distraction
+     Readability
+     Information Density
+     Accessibility

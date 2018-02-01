@@ -1,0 +1,52 @@
+Tuesday, January 16th Class Notes
+////////////////////////////////////////////////////////////////////////////////
+HCI Topics
+     Usability
+     Design
+     Methods
+     Input/Output
+     Prototyping
+     Collaboration
+     Accessibility
+     Visualization
+     Crowdsourcing
+     Ethics
+
+This semester's theme:
+     AI
+     We are taking a dive into how the computer is very likely to be dominated
+     by an AI program
+
+Practical AI Systems
+     Search
+     Recommender Systems
+     Decision Support
+     Face Recognition
+     Home Automation
+     Self-driving Collaboration
+     Voice Assistants
+     Robots
+     Health
+     Education
+
+Research Assignments
+     5 Studies
+          Conduct a mini research study on an important HCI question
+     5 Issue Analyses
+          Research on arguments for and against a proposition regarding a key Issue
+     Work and submit in pairs
+
+Learning Goals
+     Understanding the key HCI issues applicable to a wide range of interactive
+     computing artifacts
+     Understand the key HCI issues deeply with regard to A_0driven interactive computing
+     artifacts
+
+Core Skill Development
+     Read scholarly
+     Write effectively
+
+Expectations
+     Be willing to spend 6 hours a week on this class outside of lecture
+     Cite all collaborators or references clearly
+     Turn things in on time

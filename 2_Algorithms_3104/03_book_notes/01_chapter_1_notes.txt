@@ -1,0 +1,11 @@
+Chapter 1: overview of algorithms and their place in modern computing systems. This
+          Chapter defines what an algorithm is and lists some examples. It also
+          makes a case that algorithms are a technology, just as are fast hardware,
+          graphical user interfaces, object-oriented systems, and networks.
+
+Chapter 1: The Role of Algorithms in computing
+     1.1 Algorithms
+          An *algorithm* is a sequence of computational steps that transform the input
+          into the output
+
+          

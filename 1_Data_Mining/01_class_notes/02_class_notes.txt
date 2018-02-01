@@ -1,0 +1,82 @@
+Friday, January 19 2018
+Data Mining
+////////////////////////
+Why Data Mining?
+     Data Explosion
+          Storage is cheap so companies and people have been uploading more and more
+          data
+          We are drowning in data, we need to find something interesting in this data
+          We need to automate analysis of massive data sets -> Data Mining
+
+Who needs it?
+     Science
+          astronomy
+          bioinformatics
+          drug discovery
+     Business
+          fraud detection
+          targeted marketing
+     Web
+          search engines
+          advertising
+     Government
+          surveillance
+          crime detection
+
+What questions would you mine?
+     Market Basket analysis
+     Cluster analysis, Classification
+     Time Series
+
+Look into Project Epic
+     Disaster data tracking
+     Help with first responders
+
+Data Mining = knowledge discovery from data (KDD)
+     Extraction of interesting patterns or knowledge from huge amounts of Data
+     What makes a pattern interesting?
+          Correlations
+     What is the value?
+          Data itself is not useful, we need the knowledge of the pattern and apply
+          that information to make predictions
+
+Database Processing vs. Data Mining Processing
+     Database Processing
+          When you know exactly what your are looking for
+          Query
+               SQL
+          Data
+               Operational Data
+          Output
+
+     Mining Processing
+          When you vaguely know what you are looking for
+          Query
+               No precise query language
+          Data
+               Transformed data
+          Output
+NBA
+     Play-by-play information recorded by teams
+          Who is on the court
+          Who shoots
+          Results
+               These are all Database
+
+     Coaches want to know what works best
+          Plays that work well against a given teams
+          Good/bad player matchups
+               These are all Data mining we have to do more finagling to answer these
+               days
+
+Verizon
+     Attrition rate around 25-30% a year!
+     Task:     Predict who is likely to attrite next month
+          Estimate customer value
+          And what is the most cost-effective offer to be made to this customer
+
+     Verizon Wireless built a customer data warehouse
+     Identifies potential attriters
+     Developed miltiple regional models
+     Targeted customers and evaluated their value
+     If they were worth keeping then offer them a discount
