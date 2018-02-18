@@ -1,0 +1,37 @@
+Wednesday, January 17 2018
+//////////////////////////
+Data Mining First day notes
+
+Why data Mining
+     Example 1: Market Basket analysis
+          Walmart, Amazon, Netflix
+     Example 2: Cluster analysis, classification
+          Loan application, medical diagnosis
+          What Diet and exercise works best for your genes
+     Example 3: Time series
+
+Can Transcendent Meditation reduce crime rate
+     Washington D.C.
+     1993
+     The studied data said that the crime rate dropped 23% which is 2/1,000,000,000
+     But what about:
+          precipitation
+          weekends
+          temperature
+
+Course Summary
+     Data Mining
+          concepts and techniques
+          discovering interesting patterns from large amounts of Data
+          quality vs. efficiency
+     Topics covered
+          data preprocessing
+          data warehouse
+          frequency patterns
+          classification
+          clustering
+
+Course Website:
+https://sites.google.com/a/colorado.edu/csci-4502/
+
+Set up anaconda, and Jupiter textbook

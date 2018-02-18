@@ -1,0 +1,86 @@
+Thursday, January 18 2018
+HCI
+/////////////////////////////////
+Eigen Faces
+     Instead of representing your face in a linear fashion but rather a collection
+     of vectors and compare that to other photos
+     It is a linear combination that helps determine the similarities
+     This allows you to just provide a photo and you don't need to input data points
+
+Face Images in the Feret Database
+     Doesn't capture variation of each face. this simply just captures a 180 degree
+     capture of the subjects Face
+
+The Five
+     Affordance/Signifiers
+     Mental Model
+     Mapping
+     Feedback
+     Visible System Status
+
+     Affordance
+          ~What can I do with this (based on its design characteristics alone)?
+          ~The design tells you what do with it with out needing a label.
+          ~Door handle example - at a height that it is use to for your hands, the
+          gap is only able to fit your fingers in
+
+     Signifiers
+          ~A label that provides extra information on how to use object
+          ~Door handle example - a pull/push sign to tell the user what to do
+
+     Natural Affordance vs. Signifiers
+          ~Having a label is often a telling story sign that the natural affordance
+          of an object is not sufficient to convey to users what they can do with the object
+
+     Mental Model
+          ~How does this work?
+          ~A user may be wondering:
+               Does it open at all?
+               Does it open inward or outward?
+               Which side should I pull or push?
+          ~A user thinks "how does it work?"
+               Hint: hinges
+
+          ~A user's mental model, the belief of how things works (the internal mechanism of the hinges)
+          ~It can help the user reason and infer the affordance of an object (I can probably pull here) and the expected outcome (The door will then open).
+
+          ~Make predictions
+               What will happen if I do this?
+          ~Troubleshoot
+               What may be the reason something is not working?
+               What can I do to resolve this?
+
+          Definition:
+               ~Based on belief, not facts
+               ~It is the model of what users' know about a system such as a website
+               ~They base their predictions about the system on their mental models
+               and thus plan their future actions based on how that model predicts the appropriate
+               course.
+               ~Individual users each have their own mental model.
+               ~One big dilemma is the common gap between designer' and users' mental
+               models
+
+     Feedback
+          ~How does the system know it receives my input?
+          ~Light flashing because user inputed
+          ~Low battery light blinking
+
+     Feedback vs System Status
+          ~Feedback
+               Response to users' conscious input actions
+               otherwise users may not be sure the system received their inputs
+
+          ~System Status
+               Notify users what changes may have happened
+
+Affordance
+     Is there any design characteristics
+
+Mental model
+     How does Face ID work?
+          Does it work for multiple users?
+          Does the performance improve over time?
+          Can I transfer my data with my face?
+          Would the face ID work in the dark?
+          Does it work with face of colors?
+          Does it work if I am further or closer to the device

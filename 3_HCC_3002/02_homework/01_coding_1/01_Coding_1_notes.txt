@@ -1,0 +1,26 @@
+Research 1 - Usability Issues in the Wild
+//////////////////////////////////////////
+
+Objective
+     Observe the environment, identify usability issues, and propose improvements
+
+Instructions
+     For each five usability criteria, find one real-world example of a physical
+     design artificial that exhibits a usability problem.
+     By physical we mean things like furnitures, building features, tools, etc
+     that are in your physical surroundings, nothing digital.
+
+Criteria
+     Affordance
+     Mental Model
+     Mapping
+     Feedback
+     Visible System Status
+
+     ~For each example you found, take a photo or a short video to demonstrate the observed usability
+     issue.
+     ~Indicate the location you found this artifact, including a description and GPS coordinate
+     ~Finally, write a paragraph to make your argument why there exists a usability
+     issue and then propose your solution to improve it.
+
+     

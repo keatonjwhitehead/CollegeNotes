@@ -1,0 +1,67 @@
+Thursday February 18
+Information Visualization
+Class Notes
+/////////////////////////////
+
+
+     Pie charts
+          ~only good for proportions, do not use otherwise
+
+     Heat map
+          ~Map each data point to a color
+          ~Good at estimating high statistical probabilities
+
+We can analyze Visualizations using 3 questions:
+     What data dose the user see?
+          What are the inputs
+          how was the data been processed?
+     Why would someone use this tool?
+          What is the purpose of the visualization?
+          Why did the designer choose to show this information?
+     How has the Visualization been designed?
+          Check powerpoint
+
+Video Notes:
+     What data did you see?
+          We see that there was lots of geospatial data
+          Spatiotemporal data - data over time
+          Paths start and end
+          Transactions of good and services
+          Speeds
+          Number/Intensity
+
+     Why would someone use this tool?
+          To make it visible
+          Look for patterns
+          Advertise/Show what might not be obvious
+          Simplified
+          Visually stimulating, engaging
+          *Implicit Comparison*
+          Tracking
+
+     How was the visualization designed?
+          Location/Data/Perspective
+          Size
+          Color/Categories
+          Motion/Animation
+          Time
+          Music
+
+Small group visualization
+     Link: http://pages.vassar.edu/acs/files/2011/06/GWM2010.png
+          Keaton Whitehead, Matthew Coker, Joel Marquez, Vibhor Mishra
+     What:
+          Gap-minder World Map 2010
+          Shows the population size and income of different countries
+          Shows the life expectancy
+          Colors in each country to identify its region
+     Why:
+          To show differences between regions of the rich and wealthy vs the poor and sick
+          To show there is no correlation between pop size and country wealth/healthiness
+          Which countries/regions have the most of wealth
+     How:
+          Color coded x-y axis - by region
+          Labeled each country
+          Different sizes relating to pop size
+          Organized by income x-axis
+          Organized by life expectancy/health on the y-axis

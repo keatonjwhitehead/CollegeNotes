@@ -1,0 +1,29 @@
+Friday, February 19 1:00pm
+Algorithms Recitation
+///////////////////////////////
+
+Learn LATEX to help with grading
+
+Use Piazza for go-to questions
+
+Recitation slides will be posted on Moodle
+
+Analyze Algorithms
+     We informally sweep a lot under the rug
+          We try to simplify things
+          Basic (atomic) operations take O(1) time
+          All higher oder operations consist of (possibly many) basic operations
+          Basic (atomic) data types take O(1) space
+          All higher oder data types consist of many basic data types
+Counting operations
+     Look out for assignments and returns
+
+Induction
+     A way to prove that something is true for all n, which we encounter ofeent in alogithms
+     Needs three things:
+
+Strong vs. Weak Induction
+
+Proof by Contradiction
+
+Proof by Counterexample

@@ -1,0 +1,133 @@
+Monday, January 22 2018
+Data Mining - Chapter 1
+///////////////////////
+Example: A Web mining Framework
+     Web mining usually involves
+          Data cleaning
+          Data integration from multiple sources
+          Warehousing the datasetsData cube construction
+          Data selection for data MiningData mining presentation of the mining results
+          Patterns and knowledge to be used or stored into knowledge-base
+
+KDD process: A View from ML and statistics
+     Data Pre-processing
+          Data integration
+          Normalization
+          Feature selection
+          Dimension reduction
+     Data Mining
+          Pattern discovery
+          Classification
+          Outlier analysis
+     Post-Processing
+          Pattern evaluation
+          Pattern selection
+          Pattern interpretation
+          Pattern visualization
+Data Mining vs. Data Exploration
+     Business intelligence View
+          Warehouse, data cube, reporting but not much Mining
+     Business objects vs. Data mining tools
+     Supply chain example:
+          mining //
+
+Data Mining Views
+     Data View
+          Stock data
+          transaction data
+          location
+          basic text/video/sound
+          traffic
+     Knowledge view
+          What are we trying to figure out?
+          What is the question we wish to ask?
+     Method view
+          What methods will you use?
+     Application view
+          How would you apply that knowledge?
+               Beer and Dipper?
+          Target applied their knowledge of the 16 year old that was pregnant
+
+Multi-dimensional view of Data mining
+     Data to be mined
+          database data
+          Data Warehouse
+          Transactional data
+               Target data -> Which checkout is used the most
+          Sequence
+               bought a printer -> Ill need ink/paper in a month
+          Data streams
+          Sensor data
+          Spatiotemporal
+          Time-series
+          text and Web
+               Web has hyperlinks -> Topic detection
+               Similarity and popularity
+                    -> Page Rank
+          Multi-media
+          Graphs
+               Who is a social leader
+          Social and information networks
+
+     Knowledge to be mined (data mining functions)
+          Similarity
+               Characterization
+                    Customers who spent $1000 a year
+                         age 40
+                         employed
+                         good credit score
+          Different
+               Discrimination
+                    Frequent vs. infrequent Customers
+                         age, education, employed
+                    Dry vs. wet regions
+                         precipitation, temperature, humidity
+          Frequent Patterns   What items are frequently purchased together in your Walmart?
+               Frequent item-sets
+                    milk, bread
+                    beer, diaper
+               Frequent sequences
+                    printer, toner
+                    dinner, movie
+               Frequent structures
+                    Big graphs that can end up in different structures
+                         A leader vs someone who is connected to everyone
+
+          Associations
+               Association analysis
+                    buys milk => buys bread
+                    support = 0.5% confidence = 75%
+                         support - the transaction where they contain both
+                         confidence - how often is one bought after the other?
+                    Support
+
+
+          Classification and Prediction
+               1310 DNA comparison Example
+               Finding a model that describes and distinguishes data classes or concepts
+               Based on training datasetsUse classifications to predict unknown
+               class labels
+               Methods
+                    IF-THEN rules, decision tree, neural network, logistic regression,
+                    support vector machines
+
+          Clustering
+               Unsupervised learning
+               Group data to form new categories
+                    cluster houses to find distribution Patterns
+               Principle
+                    Maximizing intra-class similarity
+
+          Outlier analysis
+               Outlier: A data objet that does not comply with the general behavior
+               of the data.
+
+          Marketing analysis
+               Data sources: credit card transactions, club cards, customer calls,
+               lifestyle.
+               Target marketing:
+                    Finding your specific audience that wants your products
+
+          Structure and Network Analysis
+
+               

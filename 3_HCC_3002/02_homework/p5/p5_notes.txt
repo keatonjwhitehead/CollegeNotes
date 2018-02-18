@@ -1,0 +1,9 @@
+Notes for p5.js
+//////////////////////
+size() ~ createCanvas()
+
+frameRate(num)
+     sets the frame rate, but frameRate variable has been removed. To get
+     the current frame rate, call frameRate() with no arguments.
+
+JavaScript doesn't always take an optional callback argument
