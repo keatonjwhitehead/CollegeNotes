@@ -1,0 +1,32 @@
+Thursday, February 15 2018
+HCC
+Class notes
+//////////////////////////
+Clicker Questions:
+     After taking the red pill:
+          most people did not show any changes
+
+     In which area is DL-based AI matches human performance:
+          Logic Reasoning
+
+Educating the Public:
+     How does Facebook explain its NewsFeed algorithm?
+          Method:
+               Analyzed 35 posts
+               Ranked each paragraph, about 300 in total
+               2013 -- 2016
+          What can you learn about statements like these?
+
+          How vs. Why?
+               Why
+                    We want people to be healthy
+                    Motivations, intentions, objectives
+                    People use to judge how well they match their own goals
+               How
+                    We optimize our algorithm to serve the most popular food items
+                    System's procedural logic
+                    People use to verify the algorithm's accuracy fairness
+
+          Key Findings
+               Why is much more common than how
+               But, why alone is not enough; some people want to decide for themselves

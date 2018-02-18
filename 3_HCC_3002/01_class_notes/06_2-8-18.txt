@@ -1,0 +1,26 @@
+Thrusday, Febuaray 8th 2018
+HCI
+Class Notes
+/////////////////////
+How does News feed work?
+
+     Questions facebook thinks are important:
+          What kinds of posts will I see in News Feed?
+
+          Why am I seeing stories in my News Feed about people I'm not friends with
+          or groups I'm not in?
+               Includes stories about your friends' activity on Facebook, including
+               when they comment or like other people's stuff, even if you are not
+               friends with
+
+          Why my friend posts something on my timeline, who can see it in their News
+          Feed?
+
+          Why are my stories I've already seen still appearing in my News Feed?
+
+     Impact of Personalized Information Feed
+               Q: Can NewsFeed impact election turnout?
+          .06% growth in turnout between 2006 and 2010 might have been caused by
+          a single message on Facebook
+
+          Randomized controlled trial of political mobilization messages delivered

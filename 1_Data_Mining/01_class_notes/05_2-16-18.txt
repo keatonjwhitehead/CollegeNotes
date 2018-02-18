@@ -1,0 +1,31 @@
+Friday February 16th 2018
+Data Mining
+Class Notes
+////////////////////////////////////////////////////////////////////////////////
+Frequent Pattern Mining
+     Challenges
+          Multiple scans of the whole data set
+          A huge number of candidates
+          Tedious support  counting for candidates
+
+     Improving Apriori: general ideas
+          Partitioning
+          Sampling
+          Transaction Reduction
+          Hash-based Technique
+          Dynamic  Itemset Counting
+          Counting Support of Candidates using Hash Tree
+
+     ECLAT (Equivalence Class Transformation)
+     Horizontal data format
+          T1: {a,b,c,d}
+     Vertical data format
+          t(ae) = {T1,T2,T3}
+     Derive closed pattern via vertical intersection
+          t(x) = {T1, T2, T3} and t(Y) = {T1,T3,T4}}
+          t(xy) = {T1,T3}
+
+     FP-tree Construction
+          Step 1: Scan (find Frequency 1-itemset)
+          Step 2: Sort Frequency items in descending frequency
+          Step 3: Scan construct FP-tree
