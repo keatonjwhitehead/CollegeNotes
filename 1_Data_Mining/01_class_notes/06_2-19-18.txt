@@ -1,0 +1,91 @@
+Monday Februrary 19th 2018
+Data mining
+Class Notes
+////////////////////////////////////////////////////////////////////////////////
+Multi-level association rules
+     Milk => wheat bread [8%,70%]
+          70% of the purchases that had milk had wheat bread
+     Skim milk => wheat bread [3%, 72%]
+          Support of 3% and 72% of the purchases with skim milk had wheat bread
+
+     Support
+          Uniform Support
+               Still have to have the minimum support
+
+          Reduced support
+               As we go into more specificity we lower the threshold to find frequency
+               of a lower support purchase
+
+     Multi-dimensional Association
+          Single-dimensional (intra-dimensional) rules:
+               buys(X, "milk") => buys(x, "Milk")
+
+          Multi-dimensional rules: >= 2 predicates
+               Inter-dimensional
+
+
+     Categorical vs Quantitative
+          Categorical attributes
+               nominal, finite number of possible values, no ordering among values
+               occupation. brand, color
+               approaches: data cube
+
+          Quantitative attributes
+               numeric implicit ordering among values
+               age, income, price
+               approaches: discretization, clustering, gradient
+
+     Static
+          redefining what our bins are
+
+     Dynamic discretization
+
+Negative and Rare Patterns
+     Rare patterns
+          Very low support but interesting
+          Rare and interesting items
+
+     Negative patterns
+          if one goes up the other goes down
+
+     Negatively correlated patterns can be more interesting than frequent patterns
+
+Constraint-Based Mining
+     Automatically find all patterns in a data set
+          Unrealistic@ too many patterns, not focused
+
+     Data mining should be an interactive process
+
+     Constraint-based mining
+          user flexibility
+          system optimization
+
+Constraints in Data Mining
+     Differnet types of Constraints
+          Knowledge type constraint
+          Data constraint
+          Dimension/level constraint
+               What level do you want to dive into? did they buy mild then bread
+               and a specific brand?
+          Rule (or Pattern) constraint
+
+          Interesting constraint
+
+Meta-Rule Guided Mining
+     Meta-rule can be in the rule form with partially instantiated predicates and constants
+     age(X, "15-25") ^ profession(X,"student") => buys(X,"iPad")
+
+Constraint properties
+     Antimonotonic 
+          if an itemset S violates the constraint so does all of its supersets
+
+     monotonic
+          if an itemset S satisfies the constraint
+     succinct
+          Enumerate all and only those sets that are guaranteed to satisfy the constraint
+
+     convertible
+          Conver tough constraints into anti-monotonic or monotonic by properly odering
+          items
+
+     inconvertible

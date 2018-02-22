@@ -1,0 +1,81 @@
+Tuesday February 19th 2018
+Information Visualization
+Week Six Discussion
+/////////////////////////////////////////////////////////
+Scatterplots: Tasks, Data, and Designs
+Notes:
+     Scatterplots are the most common methods for exploring and presenting data.
+     Focus on the trade-offs of task affordances.
+     "Take both task and data characteristics into account for prescriptive scatter
+     plot design"
+          Expect to identify areas of the scatterplot design space that is under-explored
+          and provide guidance for effective scatterplot design, given the required
+          affordances and relevant characteristics of the data.
+
+     "Different design decisions can affect task performance, dependent on characteristics
+     of the data."
+
+     "identify good starting designs, as well as used in visualization authoring programs
+     for both practitioners and people new to visualization design."
+
+A Multi-level Typology of Abstract Visualization Tasks
+Notes:
+     Focus on low-level tasks or interactions and high-level tasks and leaving
+     a gap between them that is not addressed.
+     This leads to lack of distinction between the ends and means of a task, limiting
+     the potential for rigorous analysis.
+     Multi-level typology of visualization tasks to address this gap
+          Why and how a visualization task is performed, and what the inputs and outputs
+          are.
+     Provides Abstract rather than domain-specific descriptions of tasks, so that useful
+     comparisons can be made between visualization systems target at different application
+     domains.
+
+A Design Space of Visualization Tasks
+Notes:
+     Knowledge about visualization tasks plays an important role in choosing or building
+     suitable visual representations to pursue them.
+
+     Why is the task pursued? This specifies the task's goal
+     How is a task carried out? This specifies the task's means
+     What does a task seek> This specifies the data characteristics
+     Where in the data does a task operate? This specifies the target, as well as
+     the cardinality of data entries within that target.
+     When is a task performed? This specifies the order of tasks
+     Who is executing a task? This specifies the (type of) user.
+
+     Goal
+          Defines the intent with which the task is pursued.
+          Three high-level goals:
+               Exploratory analysis:
+                    concerned with deriving hypotheses from an unknown dataset.
+                    It is often equated with an undirected search
+
+               Confirmatory analysis:
+                    aims to test found or assumed hypotheses about a dataset. In
+                    analogy to an undirected search, it is sometimes described as
+                    a direct search
+
+               Presentation:
+                    deals with describing and exhibiting confirmed analysis results
+
+          The Design space as a whole:
+               Design dimensions do not stand for themselves, but are used in conjunction
+               forming the design space.
+
+
+               For this assignment I chose to read A Design space of Visualization
+               Tasks and Scatterplots: Tasks, Data and Designs. In the Design space
+               reading it defined the design space with 5-dimensions: goal, means,
+               characteristics, target, and cardinality.  If I were to look at the
+               Data that we pulled of Home Depot's stock prices and Apple stock prices
+               it would have a design space that would look like {compare, search,
+               correlation, attributes(Year and stock price), all}. This 5-dimensionality
+               makes it very easy to think to change the different dimensions to
+               find what you are looking for. As data can most of the time seem
+               overwhelming and non-correlated having these tools help to simplify
+               the data and find hidden meanings that aren't noticeable at first.
+
+               The Scatterplot paper talked about how frequent scatterplots are
+               used and how the way the data is displayed can really change the
+               representation of the data. 
