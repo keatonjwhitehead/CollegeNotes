@@ -1,0 +1,73 @@
+<html>
+<head>
+     <title>Project 0</title>
+     <style type="text/css" href="project0.css"></style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <!--Put your D3 import statement between these two lines-->
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+     <!--Put your D3 import statement between these two lines-->
+</head>
+
+<body>
+     <div id="partOne">
+          <h1>Part One: </h1>
+          I've made a change!
+     </div>
+
+     <div id="partTwo">
+          <h1>Part Two: </h1>
+          <div id="barchart">
+          </div>
+     </div>
+
+     <div id="partThree">
+          <h1>Part Three &amp; Four: </h1>
+          <div id="scatterplot">
+               <p id="scatterLabel"></p>
+          </div>
+     </div>
+
+     <div id="partFive">
+          <h1>Part Five: </h1>
+          <div id="scatterplotSet">
+          </div>
+     </div>
+
+     <script type="text/javascript">
+     // Put your part one code here ***********************
+     d3.csv("data/anscombe_I.csv",function(d){
+          consol.log(d)
+          checkDataset(d)
+     });
+     d3.csv("data/anscombe_II.csv",function(d){
+          consol.log(d)
+          checkDataset(d)
+     });
+     d3.csv("data/anscombe_III.csv",function(d){
+          consol.log(d)
+          checkDataset(d)
+     });
+     d3.csv("data/anscombe_IV.csv",function(d){
+          consol.log(d)
+          checkDataset(d)
+     });
+
+     // Leave this to test your data uploading. All data uploading should be above this line
+     function checkDataset(dataset) {
+          if (dataset.length == 11)
+          $("#partOne").append("<p>Data loaded correctly!</p>");
+          else
+          $("#partOne").append("<p>Data loaded incorrectly. Try using the debugger to help you find the bug!</p>");
+     }
+
+     // Put your part two code here ***********************
+
+     // Put your part three & four code here ***********************
+
+     // Put your part five code here ***********************
+
+     </script>
+</body>
+
+
+</html>

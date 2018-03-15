@@ -1,0 +1,68 @@
+Thursday, February 15th 2018
+Information Visualization
+Class Notes
+////////////////////////////////////////////////////////////////////////////////
+
+Discussion:
+     Algebra
+          visuals are invertible
+          People are flawed
+          "Recipe" accounting for subjectivity
+
+     Aesthetics
+          Artistic freedom
+          SW, Data, speed skill
+          Subjective
+          How people interact
+          Less about a math problem and more about how do we move forward
+
+     Matrices
+          Tangible excel
+          Use computer to extend capability
+          Grouping/similarity
+          Conscious target
+
+     Bertin
+
+Items:
+     A discrete thing (data point). May have multiple attributes
+
+Attributes:
+     Something that can be measured, observed or logged. A variable or dimension
+
+Link:
+     A relationship between items(think networks!)
+
+Position:
+     A spatial property of the data
+
+Grid:
+     Method of sampling data based on other properties of the data(position or attributes)
+     Generally not going to visualize grid data specifically
+     Why might we use a grid?
+          Common use of scientific visualization:
+               Vector flow over a car.
+
+Semantics
+     All data represents something
+     We call the stuff that tells us what means/represents semantics
+     11,7 -> months, time, population, age
+
+Semantics are important because
+     They ell us what matters about our Data
+
+Death and mortality picture
+     Not for providing data to viewer just trying to prove a point
+
+
+Dataset types
+     Tables
+          contain rows and columns
+          Cells contain values that represent an attribute for a given item
+          Keys are important attributes of each item
+          CSVs & Databases
+
+     Dataset Types
+          Networks express links between different nodes
+          Both nodes and links may have attributes
+          Depicted as node-like diagrams, but don't have to

@@ -1,0 +1,126 @@
+Working with JSON data in very simple way
+     Manage all the issues (bugs), tasks or enhancement features, etc, ad 'issues'
+          How many issues are assigned to who?
+          What is the trend of the incoming and outgoing issues?
+
+     Working with JSON data is tricky, we should use not only R but a package called 'jsonlite'
+     Combined with dplyr allows us to do more effectively than typical tabular data
+     Check out:
+          jsonlite, dplyr, tibble, and stringr
+
+     Example:
+          dataset: https://www.dropbox.com/s/gd1k41y9gbpfwq3/yelp_academic_dataset_business.json?dl=0
+               JSON is nested and hierarchical.
+               Categories has three values: "Burgers","Fast Food", "Restaurants"
+
+Importing JSON data
+     library(jsonlite)
+               *yelp <- fromJSON("yelp_academic_dataset_business.json")
+
+          -This will return an error because the file is called 'NDJSON'
+          Means there are too many JSON values inside of this JSON file.
+
+     Solution:
+               * yelp <- stream_in(file("yelp_academic_dataset_business.json"))
+
+          NOTE: You have to use 'file()' function to create a 'connection' for accessing
+          to the files on your disk when you use 'steam_in()' function
+
+Flatten Yelp data frame
+     *str(yelp)
+     After running this you can see 'hours' is actually a data frame that contains
+     7 data frames of which is for a weekday. The weekday variables contain two
+     'character' variables of 'open' and 'close'
+          This can be a bit confusing for analyzing data in R. So we have to use
+          the 'flatten()' function from 'jsonlite' package to make the nested hiearchial
+          data structure into a flatten manner by assigning each of the nested variable
+          as its own columns as much as possible.
+
+               * yelp_flat <- flatten(yelp)
+               * str(yelp_flat)
+
+     This will make the data easier to see.
+
+     Before printing out the data it helps to use 'as_data_frame()' function from
+     the package called 'tibble'
+     We can use 'as_data_frame()' function to convert our data frame to be 'tbl_df',
+     which is an extended version of the data frame. Once it is 'tbl_df', it shows
+     only the first 10 vaiables in the console output by simply typing the data
+     frame name so you don't need to call 'head()' function separately. Also it shows
+     a data type for each variable in the output.
+
+               * library(tribble)
+               * yelp_tbl <- as_data_frame(yelp_flat)
+               * yelp_tbl
+
+     This will not show the nested items in categories
+     To fix this we can use as.character() function like below:
+
+               * yelp_tbl %>% mutate(categories = as.character(categories)) %>%
+               * select(categories)
+
+Remove unnecessary variables
+     After using the 'as.character()' you may see that the variables now start with
+     either 'hours' or 'attributes'
+
+     We can remove them with the 'select()' command. If you want to know more about
+     'select()' check out :
+          https://blog.exploratory.io/selecting-columns-809bdd1ef615
+
+               * yelp_tbl %>%
+               * select(-starts_width("hours")), -starts_with("attribute")
+
+     This would actually drop almost 90 variables, this will help us view the businesses
+     that are in the data
+
+Count how many restaurants there are
+     We can use 'str_detect()' function from 'stringr' package to find the business
+     whose 'categories' variable valuse contain 'Restaurant' text. Read this for more
+     information:
+          https://blog.exploratory.io/filter-with-text-data-952df792c2ba
+
+               * yelp_tbl %>% select(-starts_width("hours")), -starts_with("attribute")) %>%
+               * filter(str_detect(categories, "restaurant"))
+
+     Even when we have a 'list' data type variable it can go inside the list values
+     and do the text matching.
+
+     This now only has 21,892 as opposed to the original of 61,184 rows. To make sure
+     To confirm if this is really the case, we need to look at the categories column
+     with 'as.character()' function again.
+
+               * yelp_tbl %>% select(-starts_with("hours")), -starts_with("attribute")
+               * %>% filter(str_detect(categories, "Restaurant")) %>%
+               * mutate(categories = as.character(categories)) %>%
+               * select(categories)
+
+     This will show the first 10 rows and will have "Restaurants" as one of the categories
+     This could be a problem because some people use different names like 'Bars', 'American', 'Pub'
+
+          This could be interesting to see what type of restaurants are more common in this data set?
+
+Unnest a list variable
+     To break out 'categories' variable and create one row for each value, we can
+     use 'unnest()' function from tidyr package to help make raw data into 'tidy' format
+
+               * library(tidyr)
+               * yelp_tbl %>% select(-starts_with("hours")), -starts_with("attribute")) %>%
+               * filter(str_detect(categories, "Restaurant")) %>% unnest(categories) %>% select(name, categories)
+
+     To fix repeats we can use the 'count()' function
+
+               * library(tidyr)
+               * yelp_tbl %>% select(-starts_with("hours")), -starts_with("attribute")) %>%
+               * filter(str_detect(categories, "Restaurant")) %>% unnest(categories) %>% select(name, categories)
+               * %>% count(categories)
+
+     To see the top categories you can use 'arrange()' function to sort
+
+               * library(tidyr)
+               * yelp_tbl %>% select(-starts_with("hours")), -starts_with("attribute")) %>%
+               * filter(str_detect(categories, "Restaurant")) %>% unnest(categories) %>% select(name, categories)
+               * %>% count(categories) %>% arrange(desc(n))
+
+     You can remove items by changing the filter tag to 'filter(categories != "Restaurants")'
+
+What are the most common restaurant types per state / province?
