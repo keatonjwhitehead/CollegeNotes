@@ -1,0 +1,76 @@
+Project 2 NCWIT - Team 7
+
+Group Members:
+     Keaton Whitehead
+     Matthew Coker
+     Matthew Sredojevic
+     Guillermo Rodriguez
+
+Due Date:
+     3.16.18 by 11:59 pm
+
+Overview:
+     We are given a dataset from the National Center for Women in Technology (NCWIT)
+     to explore enrollments in Computing & Engineering disciplines over time.
+     Our objective:
+          To create visualizations that allow the stakeholders to effectively explore
+          this data to answer different questions related to the diversity and inclusivity
+          initiatives of NCWIT
+
+Minimum Requirements:
+     Include a README.md file that outlines:
+          Information about your visualizations and what they show. Include information about interactions as appropriate.
+          Your design process (e.g., how did you go about designing, building, and refining your system? Why did you choose these representations?)
+          Your team roles for each individual
+          How to run your project
+     Include at least three unique visualizations:
+          One visualization must include some element of time
+          One visualization must not include any elements of time
+          Each visualization must be interactive
+          Your set of three visualizations should support at least one meaningful comparison between related data attributes
+          Your set of three visualizations should visualize at least five data attributes total
+     Be able to work with any dataset of this format (e.g., the numbers are interchangable but the columns and document titles are fixed).
+
+Above and Beyond:
+     Dashboarding: Show all three visualizations as part of the same screen.
+     Added Visualizations: Provide more than three visualizations
+     Dynamic Queries: Including UI widgets that allow you to change the current data field
+     Missing Data: Not all rows have data for all columns. Design ways of handling missing data intelligently.
+     Coordinated Views: Have two or more visualizations that interact with one another as you move through the data.
+     Overview+Detail: Provide a pair of views that allow viewers to retain context as they navigate your data.
+     Style: Keep the style consistent across all your views, with an eye towards intelligently applying visual design.
+
+Platforms:
+     Include step by step processes on how to run your projects
+     Some platforms to consider:
+          D3
+          R with ggplot
+          WebGL or Three.js
+          Processing or ProcessingJS
+          Google Maps API
+          Open Street Map API
+          Bokeh
+          Creatively engineered tangible/audio artifacts
+Submissions:
+     All submissions must be made through GitHub with a timestamp by 11:59pm on 3.16. Your submission files should include:
+          Your README
+          Your code and/or project
+     Note that each group only needs to submit one file.
+     Each member of the team should also send me a project post-mortem through email
+     with the subject line "INFO 4602/5602: Project 2" documenting the following:
+          What you worked on in the project
+          What your teammates worked on in the project
+          How you would rate your performance and why
+          How you would rate each teammates' performance and why
+     These documents will be kept confidential and will factor into project grades.
+     If you feel all of the team worked hard and performed well, please don't hesitate
+     to tell me that (no curving is necessary on performance reviews :-))! Also,
+     please keep in mind that different team members have different skillsets, roles,
+     and experiences.
+
+Grading:
+     Project is out of 100 points total. The project will be graded on four different criteria:
+          Creatively
+          Technical execution
+          Design (both aesthetic and your visulaization choices)
+          Project Post-Mortems
